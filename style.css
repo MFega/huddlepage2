@@ -1,0 +1,208 @@
+/* ### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%) */
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: hsl(257, 40%, 49%);
+}
+
+body{
+    background: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content:center ;
+}
+
+.container{
+    margin: 30px;
+    max-width: 1440px;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+.logo img{
+transform: scale(.5) translateX(-50px) ;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.illustration-article{
+    color: white;
+    justify-content: flex-end;
+}
+
+.illustration img{
+    transform:scale(.9);  
+}
+
+.illustration-article h1{
+text-transform: capitalize;
+font-family: 'Poppins', sans-serif;
+line-height: 50px;
+}
+
+.illustration-article p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    margin: 0px 0px 10px 0px;
+    width: 70%;
+}
+
+.illustration-article button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.illustration-article button:hover{
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateX(-180px);
+}
+
+.social-container-1{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    margin-right: 7px;
+}
+
+.social-container-1:hover{
+    border-color:hsl(300, 69%, 71%) ;
+}
+
+.social-container-1 .fa{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px; 
+}
+
+.social-container-1 .fa:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.social-container-2{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+    margin-right: 5px;
+}
+
+.social-container-2:hover{
+    border-color:hsl(300, 69%, 71%) ;
+}
+
+.social-container-2 .fa{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px;
+}
+
+.social-container-2 .fa:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.social-container-3{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+}
+
+.social-container-3:hover{
+    border-color:hsl(300, 69%, 71%) ;
+}
+
+.social-container-3 .fa{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 12px;
+}
+
+.social-container-3 .fa:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+@media only screen and (max-width:768px){
+body{
+    background: url("./huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg") no-repeat;
+}
+
+    .container{
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    .logo img{
+        transform:scale(.5) translateX(-100px);
+    }
+
+    .info{
+        flex-direction: column;
+    }
+
+    .illustration img{
+        width: 400px;
+    }
+
+    .illustration-article{
+        text-align: center;
+    }
+    .illustration-article p{
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .social{
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        transform: none;
+    }
+
+    .illustration-article button{
+        padding: 15px 70px;
+    }
+}
